@@ -1,0 +1,10 @@
+Copyright (c) 2026 Chicken Simple Tool
+PROPRIETARY LICENSE - PERSONAL USE ONLY
+
+Permission is granted to use, copy, and distribute this software (SCTool) for personal, non-commercial purposes, free of charge, under these conditions:
+
+1. COMMERCIAL USE: Prohibited. Sale, resale, lease, or commercial distribution is forbidden.
+2. DISTRIBUTION: Must be free of charge and include this license.
+3. MODIFICATIONS: Permitted for personal use. Distribution for profit is prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
