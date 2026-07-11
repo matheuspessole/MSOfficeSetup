@@ -25,7 +25,7 @@ Abra o Prompt de Comando (CMD) como Administrador e execute os comandos na ordem
 :: Acessa a pasta de destino
 cd C:\MS Office Setup
 
-:: Inicia a configuração do pacote
+:: Inicia a instalação do Office
 Setup.exe /configure Configuração.xml
 ```
 ---
