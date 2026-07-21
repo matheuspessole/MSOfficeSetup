@@ -38,7 +38,7 @@ Setup.exe /configure Configuração.xml
 
 ---
 
-## 🌐 Alterando o idioma da instalação
+## 🌐 Alterando o idioma da instalação (OPCIONAL)
 
 Caso deseje instalar o Office em outro idioma, edite o arquivo **`Configuração.xml`** antes de iniciar a instalação.
 
