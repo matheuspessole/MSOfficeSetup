@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Instalação | MS Office</title>
+    <style>
+
+        * {
+            color: white;
+        }
+        body{
+            background-color: #0a0a0a;
+            font-family: 'Inter', sans-serif;
+            padding-top: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img{
+            box-shadow: 5px 5px 2px 3px rgb(82, 82, 82);
+            max-width: 100%;
+            height: auto;
+            transition: all 0.5s ease 300ms;
+        }
+
+        img:hover{
+            transform: scale(2.0);
+            border: 2.5px solid rgb(9, 123, 143);
+            border-radius: 10px;
+            box-shadow: 0 0 0 0 rgb(82, 82, 82);
+        }
+
+        code{
+            background-color: #1a1a1a;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #00ffcc;
+        }
+
+        a{
+            background-color: rgb(68, 68, 68);
+            padding: 5px 10px;
+            border: 4px solid rgb(137, 137, 137);
+            border-radius: 3.5px;
+            text-decoration: none;
+            box-shadow: 0 0 7px 0px rgb(98, 97, 95);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        a:hover{
+            background-color: rgb(19, 84, 90);
+            border: 4px solid #00ffcc;
+            opacity: 0.9;
+            box-shadow: 0 0 7px 0px wheat;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>INSTALAÇÃO: MICROSOFT OFFICE</h1>
+        <p>Este guia detalha o passo a passo para instalar o Microsoft Office utilizando a ferramenta oficial de implantação da Microsoft.</p>
+    </header>
+
+    <!-- PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO 1: DOWNLOAD -->
+        <section>
+            <h2>📥 1. Download dos arquivos</h2>
+            <p>Baixe o pacote de instalação no link abaixo e extraia o conteúdo para <code>C:\</code>:</p>
+            <a href="https://github.com/matheuspessole/MSOfficeSetup/releases/download/ReCompact/MS.OFFICE.SETUP.zip">Clique aqui para baixar</a>
+        </section>
+        
+        <!-- SEÇÃO 2: ALTERANDO O IDIOMA -->
+        <section>
+            <h2>🌐 Alterando o idioma da instalação (OPCIONAL)</h2>
+            <p>Caso deseje instalar o Office em outro idioma, edite o arquivo Configuração.xml antes de iniciar a instalação.</p>
+            <p>Localize a linha:</p>
+            <code>&lt;Language ID="pt-br" /&gt;</code>
+            <p>Altere o valor do atributo ID para o idioma desejado.</p>
+        </section>
+
+        <!-- SEÇÃO 3: PROCEDIMENTO DE INSTALAÇÃO -->
+        <section>
+            <h2>⚙️ 2. Procedimento de instalação</h2>
+
+            <!-- PASSO 1 - PREPARAÇÃO -->
+            <h3>Passo 1 – Preparação</h3>
+            <p>Execute o arquivo <code>officedeploymenttool_17328-20162.exe</code>.</p>
+            <p>Quando o prompt for exibido, selecione a pasta onde os arquivos foram extraídos:</p>
+            <img src="img/screenshot/procurar_pasta.png" alt="caixa de diálogo procurar pasta pedindo para selecionar uma pasta para extrair os arquivos." width="300px">
+
+            <!-- PASSO 2 - INSTALAÇÃO -->
+            <h3>Passo 2 – Instalação via Terminal</h3>
+            <p>Abra o Prompt de Comando (CMD) como Administrador e execute os comandos abaixo:</p>
+            <ol>
+                <li><code>cd C:\MS Office Setup</code></li>
+                <li><code>Setup.exe /configure Configuração.xml</code></li>
+            </ol>
+            <img src="img/screenshot/terminal_01.png" alt="terminal aberto com respectivos comandos cd C:\MS Office Setup e Setup.exe /configure Configuração.xml." width="500px">
+        </section>
+        
+        <!-- SEÇÃO 4: OBSERVAÇÕES -->
+        <section>
+            <p><strong>Importante:</strong> Após realizar a alteração, salve o arquivo Configuração.xml e execute novamente o comando de instalação.</p>
+            <h2>📝 Observações</h2>
+
+            <ul>
+                <li>Este repositório contém apenas os arquivos necessários para a instalação do Microsoft Office.</li>
+                <li>O procedimento utiliza a Office Deployment Tool (ODT) oficial da Microsoft.</li>
+                <li>A instalação não ativa o Office. Para utilizar o produto, é necessário possuir uma licença válida da Microsoft.</li>
+                <li>Caso deseje instalar outra edição, arquitetura (32/64 bits) ou idioma, basta ajustar o arquivo Configuração.xml antes da instalação.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
